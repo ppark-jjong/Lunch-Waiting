@@ -2,7 +2,7 @@
 - 개인 폴더는 개인 작업 및 공부 파일용
 - T_main 폴더는 Main 폴더임으로 최종 demo 파일
 
-##  Repository MemBer
+##  Repository Member
 
 | 이름   | 주소                             |  
 | ------ | ------------------------------------ |
@@ -12,7 +12,7 @@
 | 오지현 |ojhyeon930@gmail.com| 
 | 정승민 |jeongseungmin123@gmail.com|
 
-## Reference site
+## Reference Site
 
 | 이름   |                             |  역할  |
 | ------ | ------------------------------------ |------|
