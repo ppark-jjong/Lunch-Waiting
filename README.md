@@ -10,7 +10,7 @@
 | 박종혁 |parkjonghyeok2000@gmail.com| 
 | 신현성 |shin00586@gmail.com| 
 | 오지현 |ojhyeon930@gmail.com| 
-| 정승민 |jeongseungmin123@gmail.com|
+| 김재민 |kjm9049123@gmail.com|
 
 ## Reference Site
 
@@ -20,5 +20,5 @@
 | 박종혁 |parkjonghyeok2000@gmail.com| 웹, 앱개발 (Full-stack) |
 | 신현성 |shin00586@gmail.com| 웹, 앱개발(Back-end) |
 | 오지현 |ojhyeon930@gmail.com| 웹, 개발 (Front-end) |
-| 정승민 |jeongseungmin123@gmail.com| 앱개발 (Front-end) |
+| 김재민 |kjm9049123@gmail.com| 웹개발 (Front-end) |
 
