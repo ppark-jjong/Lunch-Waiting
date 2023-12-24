@@ -1,0 +1,15 @@
+team: Panthers
+
+manager: Sebastian
+
+<<<<<<< HEAD
+coach: Shirley
+=======
+coach: Raymond
+>>>>>>> 524ebd9 (Edit Panthers)
+
+members:
+- Violet
+- Stella
+- Anthony
+- Freddie
