@@ -1,11 +1,13 @@
 package org.example.testsecurity.config.auth;
 
+import lombok.Data;
 import org.example.testsecurity.entity.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Map;
 
 /*시큐리티가 클라이언트에서 login이라는 요청을 받고 해당 요청을 SecurityConfig Bean 파일에서 함수를 통해 낚아채어 로그인을 수행하면
  * 시큐리티가 임의의 공간인 제너릭 타입 Security ContextHolder라는 타입에다가 session 값을 저장시켜 로그인한다
@@ -13,9 +15,11 @@ import java.util.Collection;
  * Authentication 안에는 User 정보가 있어야 되며
  * User 타입은 UserDetails 타입의 객체 정보가 들어가야한다.
  * Security Session => Authentication => UserDetails(PrincipalDetails) 순으로 접속 가능하다 */
+@Data
 public class PrincipalDetails implements UserDetails {
     private User user;
 
+    //일반 로그인 생성자
     public PrincipalDetails(User user) {
         this.user = user;
     }
