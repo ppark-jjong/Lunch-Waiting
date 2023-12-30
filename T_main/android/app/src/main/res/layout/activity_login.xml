@@ -4,7 +4,125 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".login">
-    
+
+<!--    <include-->
+<!--        layout="@layout/main_tool_bar"-->
+<!--        android:id="@+id/toolbar"-->
+<!--       />-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/wanted_2"
+        android:text="안녕하세요\n페이팅입니다"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:background="@drawable/edit_box_main"
+        android:fontFamily="@font/wanted_5"
+        android:layout_marginTop="50dp"
+        android:paddingStart="20dp"
+        android:hint="이메일"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="34dp"
+        android:paddingStart="20dp"
+        android:background="@drawable/edit_box_main"
+        android:fontFamily="@font/wanted_5"
+        android:hint="비밀번호"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/main_button"
+        android:fontFamily="@font/wanted_2"
+        android:text="로그인"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatButton">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/wanted_5"
+            android:textSize="14sp"
+            android:layout_marginRight="10dp"
+            android:text="아이디 찾기" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#777777"
+            android:fontFamily="@font/wanted_5"
+            android:text="|"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/wanted_5"
+            android:textSize="14sp"
+            android:layout_marginRight="10dp"
+            android:text="비밀번호 찾기" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#777777"
+            android:fontFamily="@font/wanted_5"
+            android:text="|"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/wanted_5"
+            android:textSize="14sp"
+            android:text="회원가입" />
+
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

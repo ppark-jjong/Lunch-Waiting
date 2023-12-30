@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".home">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/main_tool_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#F8FAFC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="18dp"
+            android:layout_marginTop="26dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/img" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="@font/wanted_4"
+                            android:text="서울 북부"
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+
+                        <ImageView
+                            android:id="@+id/areaBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/round_keyboard_arrow_down_24" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayout"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/button_1"
+                                    android:fontFamily="@font/wanted_5"
+                                    android:text="전체"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/button_1"
+                                    android:fontFamily="@font/wanted_5"
+                                    android:text="성수"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/button_1"
+                                    android:fontFamily="@font/wanted_5"
+                                    android:text="압구정/청담"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/button_1"
+                                    android:fontFamily="@font/wanted_5"
+                                    android:text="선릉/삼성"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/button_1"
+                                    android:fontFamily="@font/wanted_5"
+                                    android:text="논현"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/button_1"
+                                    android:fontFamily="@font/wanted_5"
+                                    android:text="서초/방배"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/button_1"
+                                    android:fontFamily="@font/wanted_5"
+                                    android:text="양재/수서/도곡"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/button_1"
+                                    android:fontFamily="@font/wanted_5"
+                                    android:text="가로수길"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/button_3"
+                                    android:fontFamily="@font/wanted_5"
+                                    android:text="지역 더보기"
+                                    android:textColor="#7A7A7A"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+                        </LinearLayout>
+                </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#F8FAFC"
+            android:layout_marginTop="26dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="18dp"
+            android:orientation="vertical"
+            android:layout_marginTop="26dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view1">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/wanted_2"
+                    android:text="주변 맛집 다 모여라!"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="66dp"
+                            android:layout_height="26dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@drawable/button_2"
+                            android:fontFamily="@font/wanted_7"
+                            android:padding="2dp"
+                            android:textColor="@color/white"
+                            android:text="가까운 순"
+                            android:textSize="10dp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="84dp"
+                            android:layout_height="26dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@drawable/button_4"
+                            android:fontFamily="@font/wanted_7"
+                            android:padding="2dp"
+                            android:text="웨이팅 빠른 순"
+                            android:textSize="10dp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="74dp"
+                            android:layout_height="26dp"
+                            android:background="@drawable/button_4"
+                            android:fontFamily="@font/wanted_7"
+                            android:padding="2dp"
+                            android:text="평점 높은 순"
+                            android:textSize="10dp" />
+                </LinearLayout>
+        </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
