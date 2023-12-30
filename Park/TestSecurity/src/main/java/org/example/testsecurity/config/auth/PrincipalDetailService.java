@@ -1,6 +1,6 @@
 package org.example.testsecurity.config.auth;
 
-import org.example.testsecurity.entity.User;
+import org.example.testsecurity.model.User;
 import org.example.testsecurity.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -13,16 +13,17 @@ public class PrincipalDetailService implements UserDetailsService {
 
     @Autowired
     UserRepository userRepository;
+
     //시큐리티 session(내부 Authentication(내부 userDetails))에 저장됨
 //    즉 밑에 메서드는 로그인 메서드 서비스라고 봐야됨
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        User userEntity = userRepository.findByUsername(username);
-        System.out.println("security login 정상 작동");
-        if (userEntity != null) {
+        User user = userRepository.findByUsername(username);
+        if (user != null) {
 //          Session값에 저장될 userDetail 정보를 리턴해준다
-            return new PrincipalDetails(userEntity);
+            return new PrincipalDetails(user);
+        } else {
+            return null;
         }
-        return null;
     }
 }

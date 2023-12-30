@@ -1,6 +1,6 @@
 package org.example.testsecurity.controller;
 
-import org.example.testsecurity.entity.User;
+import org.example.testsecurity.model.User;
 import org.example.testsecurity.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.annotation.Secured;
@@ -28,8 +28,9 @@ public class IndexController {
     }
 
     @GetMapping({"", "/"})
+    @ResponseBody
     public String Index() {
-        return "index";
+        return "인덱스 페이지 입니다";
     }
 
     @GetMapping("/manager")
@@ -52,6 +53,7 @@ public class IndexController {
     public String join(User user) {
         System.out.print(user);
         user.setRole("ROLE_USER");
+        //여기 밑에 메서드들은 시큐리티 암호화에 따라 패스워드 설정을 위한 메서드들
         String rawPassword = user.getPassword();
         String encPassword = bCryptPasswordEncoder.encode(rawPassword);
         user.setPassword(encPassword);

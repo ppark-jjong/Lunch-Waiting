@@ -1,11 +1,10 @@
-package org.example.testsecurity.entity;
+package org.example.testsecurity.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
-import lombok.Generated;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.sql.Timestamp;
@@ -21,5 +20,6 @@ public class User {
     private String email;
     private String role;
     @CreationTimestamp
-    private Timestamp crateDate;
+    private Timestamp createDate;
+
 }
