@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_radius">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="지역 선택"
+                android:textColor="#A6A6A6"
+                android:fontFamily="@font/wanted_5"
+                android:textSize="16dp"
+                />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/baseline_cancel_24"
+                />
+
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="서울 북부"
+                android:textColor="#000000"
+                android:fontFamily="@font/wanted_7"
+                android:textSize="16dp"
+                />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="서울 남부"
+                android:textColor="#757575"
+                android:fontFamily="@font/wanted_7"
+                android:textSize="16dp"
+                />
+
+            <Space
+                android:layout_width="60dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="경기 북부"
+                android:textColor="#757575"
+                android:fontFamily="@font/wanted_7"
+                android:textSize="16dp"
+                />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="경기 남부"
+                android:textColor="#757575"
+                android:fontFamily="@font/wanted_7"
+                android:textSize="16dp"
+                />
+
+            <Space
+                android:layout_width="60dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="인천"
+                android:textColor="#757575"
+                android:fontFamily="@font/wanted_7"
+                android:textSize="16dp"
+                />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="강원"
+                android:textColor="#757575"
+                android:fontFamily="@font/wanted_7"
+                android:textSize="16dp"
+                />
+
+            <Space
+                android:layout_width="60dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="대전"
+                android:textColor="#757575"
+                android:fontFamily="@font/wanted_7"
+                android:textSize="16dp"
+                />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="충북"
+                android:textColor="#757575"
+                android:fontFamily="@font/wanted_7"
+                android:textSize="16dp"
+                />
+
+            <Space
+                android:layout_width="60dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="충남"
+                android:textColor="#757575"
+                android:fontFamily="@font/wanted_7"
+                android:textSize="16dp"
+                />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="세종"
+                android:textColor="#757575"
+                android:fontFamily="@font/wanted_7"
+                android:textSize="16dp"
+                />
+
+            <Space
+                android:layout_width="60dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="광주"
+                android:textColor="#757575"
+                android:fontFamily="@font/wanted_7"
+                android:textSize="16dp"
+                />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="전북"
+                android:textColor="#757575"
+                android:fontFamily="@font/wanted_7"
+                android:textSize="16dp"
+                />
+
+            <Space
+                android:layout_width="60dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="전남"
+                android:textColor="#757575"
+                android:fontFamily="@font/wanted_7"
+                android:textSize="16dp"
+                />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="울산"
+                android:textColor="#757575"
+                android:fontFamily="@font/wanted_7"
+                android:textSize="16dp"
+                />
+
+            <Space
+                android:layout_width="60dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="부산"
+                android:textColor="#757575"
+                android:fontFamily="@font/wanted_7"
+                android:textSize="16dp"
+                />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="대구"
+                android:textColor="#757575"
+                android:fontFamily="@font/wanted_7"
+                android:textSize="16dp"
+                />
+
+            <Space
+                android:layout_width="60dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="경북"
+                android:textColor="#757575"
+                android:fontFamily="@font/wanted_7"
+                android:textSize="16dp"
+                />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="경남"
+                android:textColor="#757575"
+                android:fontFamily="@font/wanted_7"
+                android:textSize="16dp"
+                />
+
+            <Space
+                android:layout_width="60dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp">
+
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="제주"
+                android:textColor="#757575"
+                android:fontFamily="@font/wanted_7"
+                android:textSize="16dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
