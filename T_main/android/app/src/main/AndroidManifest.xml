@@ -10,15 +10,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FastWaiTing"
+        android:theme="@style/Theme.FastWaiTing.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".login"
+            android:name=".bottom_sheet_dialog_area"
             android:exported="false" />
         <activity
-            android:name=".Intro"
-            android:exported="true"
-            android:theme="@style/Theme.FastWaiTing.NoActionBar">
+            android:name=".home"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,8 +25,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".Intro"
+            android:exported="true"
+            android:theme="@style/Theme.FastWaiTing.NoActionBar"></activity>
     </application>
 
 </manifest>
