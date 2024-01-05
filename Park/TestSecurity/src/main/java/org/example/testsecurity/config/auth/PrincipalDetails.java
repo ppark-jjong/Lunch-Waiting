@@ -1,6 +1,7 @@
 package org.example.testsecurity.config.auth;
 
-import org.example.testsecurity.entity.User;
+import lombok.Data;
+import org.example.testsecurity.model.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -11,11 +12,13 @@ import java.util.Collection;
  * 시큐리티가 임의의 공간인 제너릭 타입 Security ContextHolder라는 타입에다가 session 값을 저장시켜 로그인한다
  * 해당 세션에 들어갈 수 있는 값들은 정해져 있는데 => Authentication 타입의 객체만이 들어간다
  * Authentication 안에는 User 정보가 있어야 되며
- * User 타입은 UserDetails 타입의 객체 정보가 들어가야한다.
- * Security Session => Authentication => UserDetails(PrincipalDetails) 순으로 접속 가능하다 */
+ * User 타입은 UserDetails 타입으로 지정되어 있고 해당 객체 정보가 들어가야한다.
+ * Security Session => Authentication => UserDetails(PrincipalDetails) 순으로 얽혀있다 */
+@Data
 public class PrincipalDetails implements UserDetails {
     private User user;
 
+    //일반 로그인 생성자
     public PrincipalDetails(User user) {
         this.user = user;
     }
@@ -23,7 +26,7 @@ public class PrincipalDetails implements UserDetails {
     //해당 User의 권한을 리턴하는 메서드
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        Collection<GrantedAuthority> collect = new ArrayList<>();
+        Collection<GrantedAuthority> collect = new ArrayList<GrantedAuthority>();
         collect.add(new GrantedAuthority() {
             @Override
             public String getAuthority() {
