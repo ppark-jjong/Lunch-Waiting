@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[공지] 페이팅 전산시스템 점검에 따른 서비스 일시 중단 안내 (09월 21일 05시~06시)"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/wanted_5" />
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2023년 11월 01일"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/wanted_5"
+            />
+    </LinearLayout>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/round_navigate_next_24"/>
+
+
+</LinearLayout>
