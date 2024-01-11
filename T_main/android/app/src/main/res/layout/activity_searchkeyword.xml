@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".searchkeyword">
+
+    <ImageView
+        android:id="@+id/areaBtn"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:src="@drawable/baseline_arrow_back_ios_new_24_beta"
+        app:layout_constraintEnd_toStartOf="@+id/searchkeword"
+        app:layout_constraintTop_toTopOf="@+id/searchkeword"
+        android:layout_marginEnd="5dp"/>
+
+    <EditText
+        android:id="@+id/searchkeword"
+        android:layout_width="360dp"
+        android:layout_height="30dp"
+        android:background="@drawable/searchkeywordbox"
+        android:drawableStart="@drawable/round_search_24"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/wanted_5"
+        android:hint="검색어를 입력해 주세요."
+        android:paddingStart="10dp"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#F8FAFC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchkeword"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:orientation="vertical"
+        android:paddingStart="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <TextView
+            android:id="@+id/keywordview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/wanted_2"
+            android:text="추천 키워드"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="78dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/keyword"
+                android:fontFamily="@font/wanted_6"
+                android:padding="2dp"
+                android:text="가까운 순"
+                android:textSize="14dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="104dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/keyword"
+                android:fontFamily="@font/wanted_6"
+                android:padding="2dp"
+                android:text="웨이팅 빠른 순"
+                android:textSize="14dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="94dp"
+                android:layout_height="30dp"
+                android:background="@drawable/keyword"
+                android:fontFamily="@font/wanted_6"
+                android:padding="2dp"
+                android:text="평점 높은 순"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="26dp"
+        android:paddingTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <TextView
+            android:id="@+id/keywordview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/wanted_2"
+            android:text="뭐 먹지?"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="52dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/keyword"
+                android:fontFamily="@font/wanted_6"
+                android:padding="2dp"
+                android:text="한식"
+                android:textSize="14dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="52dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/keyword"
+                android:fontFamily="@font/wanted_6"
+                android:padding="2dp"
+                android:text="중식"
+                android:textSize="14dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="52dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/keyword"
+                android:fontFamily="@font/wanted_6"
+                android:padding="2dp"
+                android:text="일식"
+                android:textSize="14dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="52dp"
+                android:layout_height="30dp"
+                android:background="@drawable/keyword"
+                android:fontFamily="@font/wanted_6"
+                android:padding="2dp"
+                android:text="양식"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="52dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/keyword"
+                android:fontFamily="@font/wanted_6"
+                android:padding="2dp"
+                android:text="구이"
+                android:textSize="14dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="52dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/keyword"
+                android:fontFamily="@font/wanted_6"
+                android:padding="2dp"
+                android:text="뷔페"
+                android:textSize="14dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="74dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/keyword"
+                android:fontFamily="@font/wanted_6"
+                android:padding="2dp"
+                android:text="레스토랑"
+                android:textSize="14dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="74dp"
+                android:layout_height="30dp"
+                android:background="@drawable/keyword"
+                android:fontFamily="@font/wanted_6"
+                android:padding="2dp"
+                android:text="아시아식"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
