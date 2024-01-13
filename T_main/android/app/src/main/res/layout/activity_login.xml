@@ -16,7 +16,7 @@
         android:id="@+id/textView"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="120dp"
         android:fontFamily="@font/wanted_2"
         android:text="안녕하세요\n페이팅입니다"
         android:textColor="@color/black"
@@ -66,10 +66,11 @@
         app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
     <LinearLayout
-        android:layout_width="340dp"
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
         android:gravity="center"
-        android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appCompatButton">
@@ -77,50 +78,105 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/wanted_5"
-            android:textSize="14sp"
             android:layout_marginRight="10dp"
-            android:text="아이디 찾기" />
+            android:fontFamily="@font/wanted_5"
+            android:text="아이디 찾기"
+            android:textSize="14sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:textColor="#777777"
-            android:fontFamily="@font/wanted_5"
-            android:text="|"
             android:layout_marginRight="10dp"
-            android:textAlignment="center"
+            android:fontFamily="@font/wanted_5"
             android:gravity="center"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/wanted_5"
-            android:textSize="14sp"
-            android:layout_marginRight="10dp"
-            android:text="비밀번호 찾기" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:textColor="#777777"
-            android:fontFamily="@font/wanted_5"
             android:text="|"
-            android:layout_marginRight="10dp"
             android:textAlignment="center"
+            android:textColor="#777777"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/wanted_5"
+            android:text="비밀번호 찾기"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/wanted_5"
             android:gravity="center"
-            />
+            android:text="|"
+            android:textAlignment="center"
+            android:textColor="#777777"
+            android:textSize="14sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/wanted_5"
-            android:textSize="14sp"
-            android:text="회원가입" />
+            android:text="회원가입"
+            android:textSize="14sp" />
 
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:background="#9E9E9E" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="또는" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:background="#9E9E9E" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/google_rd_icon"
+            android:layout_marginEnd="20dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/kakao_rd_icon"
+            android:layout_marginEnd="20dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/naver_rd_icon" />
 
     </LinearLayout>
 

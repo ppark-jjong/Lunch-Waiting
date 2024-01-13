@@ -7,6 +7,12 @@ android {
     namespace = "com.example.fastwaiting"
     compileSdk = 34
 
+    buildFeatures {
+        // 뷰 바인딩 활성화
+        viewBinding = true
+    }
+
+
     defaultConfig {
         applicationId = "com.example.fastwaiting"
         minSdk = 24
@@ -36,7 +42,6 @@ android {
 }
 
 dependencies {
-
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")

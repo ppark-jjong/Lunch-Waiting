@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">fastWaiTing</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <style name="CustomTabTextStyle" parent="TextAppearance.Design.Tab">
+        <item name="android:fontFamily">@font/wanted_2</item>
+        <!-- 기타 필요한 속성들도 추가할 수 있습니다. -->
+    </style>
 </resources>

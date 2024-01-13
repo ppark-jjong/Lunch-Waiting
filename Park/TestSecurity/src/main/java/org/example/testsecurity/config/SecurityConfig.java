@@ -39,8 +39,10 @@ public class SecurityConfig {
                 .and()
                 .formLogin()
                 .loginPage("/loginForm")
-                .loginProcessingUrl("/login")//login 주소가 호출되면 Security에서 낚아 채서 따로 로직 처리 후 로그인 시켜줌 따라서 login이라는 로직을 컨트롤러나 서비스에 따로 만들이 않아도 된다.
-                .defaultSuccessUrl("/") // 앞 메소드 중 "/loginForm"를 실행하여 성공하면 default 값 주소로 "/" url을 실행시키고 이 외의 url로 접속하여 즉 다른 특정 페이지를 요청하여 로그인 하게 되면 로그인 성공 후 해당 요청 페이지로 넘겨줌
+                //login 주소가 호출되면 Security에서 낚아 채서 따로 로직 처리 후 로그인 시켜줌 따라서 login이라는 로직을 컨트롤러나 서비스에 따로 만들이 않아도 된다.
+                .loginProcessingUrl("/login")
+                // 앞 메소드 중 "/loginForm"를 실행하여 성공하면 default 값 주소로 "/" url을 실행시키고 이 외의 url로 접속하여 즉 다른 특정 페이지를 요청하여 로그인 하게 되면 로그인 성공 후 해당 요청 페이지로 넘겨줌
+                .defaultSuccessUrl("/")
 
                 .and()
                 .oauth2Login() //oauth 로그인 시도가 되면
