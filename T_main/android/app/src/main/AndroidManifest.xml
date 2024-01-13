@@ -13,6 +13,9 @@
         android:theme="@style/Theme.FastWaiTing.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".searchkeyword"
+            android:exported="false" />
+        <activity
             android:name=".bottom_sheet_dialog_area"
             android:exported="false" />
         <activity
@@ -30,7 +33,7 @@
         <activity
             android:name=".Intro"
             android:exported="true"
-            android:theme="@style/Theme.FastWaiTing.NoActionBar"></activity>
+            android:theme="@style/Theme.FastWaiTing.NoActionBar" />
     </application>
 
 </manifest>
