@@ -13,8 +13,11 @@ public class MyFilter1 implements Filter {
             throws IOException, ServletException {
         HttpServletRequest req = (HttpServletRequest) request;
         HttpServletResponse res = (HttpServletResponse) response;
-        String headerAuth = req.getHeader("Authorization");
-        System.out.println(headerAuth);
+
+        if (req.getMethod().equals("POST")) {
+            String headerAuth = req.getHeader("Authorization");
+            System.out.println(headerAuth);
+        }
         chain.doFilter(req, res);
     }
 }
