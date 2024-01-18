@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:src="@drawable/logo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시골뚝배기"
+            android:fontFamily="@font/wanted_4"
+            android:layout_marginTop="6dp"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11.01 수"
+                android:textSize="14sp"
+                android:textColor="#6A6A6A"
+                android:layout_marginEnd="10dp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="12dp"
+                android:background="#7A7A7A"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오후 08:00"
+                android:textSize="14sp"
+                android:textColor="#6A6A6A"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/main_box_1"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="386dp"
+            android:layout_height="80dp"
+            android:elevation="6dp"
+            android:background="@drawable/main_box_1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="20dp"
+                android:textColor="#333333"
+                android:text="현재 고객님 앞에 00팀이 대기중입니다"
+                android:fontFamily="@font/wanted_4"
+                android:textSize="14sp"/>
+
+            <View
+                android:layout_width="360dp"
+                android:layout_height="1dp"
+                android:background="#B1B1B1"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="김수빈, 010-8322-7256"
+                    android:textSize="12sp"
+                    android:textColor="#151515"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2명"
+                    android:textSize="12sp"
+                    android:textColor="#6C6C6C"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
