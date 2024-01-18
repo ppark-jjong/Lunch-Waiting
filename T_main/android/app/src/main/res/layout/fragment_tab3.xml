@@ -5,9 +5,39 @@
     android:layout_height="match_parent"
     tools:context=".Fragment.TabFragment3">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="테스트1"/>
+    <LinearLayout
+        android:id="@+id/noReservation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
 
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/calendar_image"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지금 바로 예약 후"
+            android:layout_gravity="center"
+            android:fontFamily="@font/wanted_7"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="예약 확정 내역을 확인해보세요 !"
+            android:fontFamily="@font/wanted_7"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
 </FrameLayout>
