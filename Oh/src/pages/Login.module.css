@@ -1,0 +1,172 @@
+.logoIcon {
+  position: absolute;
+  margin: 0 !important;
+  top: 3.38rem;
+  left: 12.69rem;
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+}
+.idTitle,
+.idInput {
+  position: relative;
+  font-size: 1rem;
+  font-family: "Wanted Sans Variable";
+  color: #2e3137;
+  text-align: left;
+}
+.idInput {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-size: 0.88rem;
+  background-color: transparent;
+  color: #000;
+  display: inline-block;
+  height: 1.06rem;
+}
+.idbox {
+  align-self: stretch;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
+}
+.userid {
+  margin: 0 !important;
+  position: absolute;
+  top: 9.25rem;
+  left: 2.5rem;
+  width: 24.38rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.31rem;
+}
+.passwordTitle,
+.passwordInput {
+  position: relative;
+  font-size: 1rem;
+  font-family: "Wanted Sans Variable";
+  color: #2e3137;
+  text-align: left;
+}
+.passwordInput {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-size: 0.88rem;
+  background-color: transparent;
+  color: #000;
+  display: inline-block;
+  height: 1.06rem;
+}
+.passwordbox {
+  align-self: stretch;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
+}
+.password {
+  margin: 0 !important;
+  position: absolute;
+  top: 14.63rem;
+  left: 2.5rem;
+  width: 24.38rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.31rem;
+}
+.loginText {
+  position: relative;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  font-family: "Wanted Sans Variable";
+  color: #fff;
+  text-align: left;
+}
+.loginButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0.94rem 1.25rem;
+  background-color: #b6c0cc;
+  margin: 0 !important;
+  position: absolute;
+  top: 20.63rem;
+  left: 2.5rem;
+  border-radius: 10px;
+  width: 24.38rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.joinText,
+.joinArrow {
+  position: relative;
+}
+.joinText {
+  font-size: 0.88rem;
+  font-family: "Wanted Sans Variable";
+  color: #009aff;
+  text-align: left;
+}
+.joinArrow {
+  object-fit: contain;
+}
+.joinButton,
+.login,
+.loginFrame {
+  display: flex;
+  align-items: center;
+}
+.joinButton {
+  margin: 0 !important;
+  position: absolute;
+  top: 24.69rem;
+  left: 22.9rem;
+  width: 4rem;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.login,
+.loginFrame {
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.loginFrame {
+  margin: 0;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+  width: 30rem;
+  height: 30rem;
+  flex-shrink: 0;
+  justify-content: center;
+  padding: 0.63rem;
+  gap: 0.63rem;
+}
+.login {
+  background-color: #f2f5f9;
+  width: 100%;
+  height: 67.5rem;
+  justify-content: space-between;
+  padding: 18.31rem 1.25rem;
+}
