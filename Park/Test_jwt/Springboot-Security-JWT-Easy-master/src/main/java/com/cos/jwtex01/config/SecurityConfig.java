@@ -29,13 +29,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http
-				.addFilter(corsConfig.corsFilter())
+				.addFilter(corsConfig.corsFilter()) // @CrossOrigin 방식을 x, 인증을 필터로 하겠다.
 				.csrf().disable()
 				.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
 			.and()
-				.formLogin().disable()
+				.formLogin().disable() //localhost:8080/login 주소로 login이 반응을 하지 않는다.
 				.httpBasic().disable()
-				
+// /login을 할 수 있게 필터를 재등록 해준다 (안에 파라미터는 필수적으로 던져야할 파라미터임 - WebSecurityConfigurerAdapter 안에 있다)
 				.addFilter(new JwtAuthenticationFilter(authenticationManager()))
 				.addFilter(new JwtAuthorizationFilter(authenticationManager(), userRepository))
 				.authorizeRequests()

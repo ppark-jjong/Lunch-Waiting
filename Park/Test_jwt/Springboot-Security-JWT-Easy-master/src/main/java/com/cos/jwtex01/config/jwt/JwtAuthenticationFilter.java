@@ -24,19 +24,28 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import lombok.RequiredArgsConstructor;
 
+//스프링 시큐리티에 있는 UsernamePasswordAuthenticationFilter 필터로
+// /login 요청 시 username, password 전송하면 (post)
+// UsernamePasswordAuthenticationFilter가 동작을 한다.
 @RequiredArgsConstructor
 public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilter{
 
+	//이 변수로 로그인 시도를 할 수 있음
 	private final AuthenticationManager authenticationManager;
 	
 	// Authentication 객체 만들어서 리턴 => 의존 : AuthenticationManager
 	// 인증 요청시에 실행되는 함수 => /login
+	// /login 요청 시 로그인 시도를 위해 실행 되는 함수이다.
 	@Override
 	public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response)
 			throws AuthenticationException {
-		
 		System.out.println("JwtAuthenticationFilter : 진입");
-		
+//		1. username, password를 받아서
+//		2. 정상인지 로그인 시도를 함 이 때 *authenticationManager 로 로그인 시도를 하면
+//		PrincipalDetailsService 가 호출 loadUserByUsername() 함수가 실행이 됨
+//		3. PrincipalDetail를 세션에 담고 (권한 유지를 위해)
+//		4. JWT토큰을 만들어서 응답이 된다.
+
 		// request에 있는 username과 password를 파싱해서 자바 Object로 받기
 		ObjectMapper om = new ObjectMapper();
 		LoginRequestDto loginRequestDto = null;

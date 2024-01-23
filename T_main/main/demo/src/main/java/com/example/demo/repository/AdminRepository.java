@@ -1,4 +1,4 @@
 package com.example.demo.repository;
 
-public interface StoreRepository {
+public interface AdminRepository {
 }

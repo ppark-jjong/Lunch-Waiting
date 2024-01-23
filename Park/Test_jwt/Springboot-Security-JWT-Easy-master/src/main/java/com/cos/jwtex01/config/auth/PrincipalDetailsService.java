@@ -10,6 +10,7 @@ import com.cos.jwtex01.repository.UserRepository;
 
 import lombok.RequiredArgsConstructor;
 
+//http:/localhost:8080/login
 @Service
 @RequiredArgsConstructor
 public class PrincipalDetailsService implements UserDetailsService{
