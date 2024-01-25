@@ -99,7 +99,7 @@
     color: #fff;
     text-align: left;
   }
-  .login1 {
+  .loginButtonBox {
     cursor: pointer;
     border: 0;
     padding: 0.94rem 1.25rem;
@@ -116,26 +116,27 @@
     justify-content: center;
     box-sizing: border-box;
   }
-  .joinText {
+  .LoginJoinText {
     position: relative;
     font-size: 0.88rem;
     font-family: "Wanted Sans Variable";
     color: #009aff;
     text-align: left;
+    font-weight: 500;
   }
-  .joinArrow {
+  .LoginJoinArrow {
     height: 0.77rem;
     width: 0.47rem;
     position: relative;
     object-fit: contain;
   }
-  .join,
+  .LoginJoin,
   .login,
   .loginFrame {
     display: flex;
     align-items: center;
   }
-  .join {
+  .LoginJoin {
     width: 4rem;
     margin: 0 !important;
     position: absolute;
@@ -143,6 +144,7 @@
     left: 22.8rem;
     flex-direction: row;
     justify-content: space-between;
+    text-decoration: none;
   }
   .login,
   .loginFrame {
