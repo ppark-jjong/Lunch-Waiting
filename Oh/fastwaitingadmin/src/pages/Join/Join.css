@@ -1,0 +1,263 @@
+.joinuserIdText,
+.joinLogoIcon {
+  position: relative;
+}
+.joinLogoIcon {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+}
+.joinuserIdText {
+  font-size: 1rem;
+  font-family: "Wanted Sans Variable";
+  color: #2e3137;
+  text-align: left;
+}
+.joinUserIdInput,
+.joinUserIdBox {
+  display: flex;
+  align-items: center;
+}
+.joinUserIdInput {
+  width: 33.75rem;
+  border: 0;
+  outline: 0;
+  font-family: "Wanted Sans Variable";
+  font-size: 0.88rem;
+  background-color: transparent;
+  height: 1.06rem;
+  color: #000;
+  position: relative;
+  text-align: left;
+}
+.joinUserIdBox {
+  align-self: stretch;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.75rem 1.81rem;
+}
+.joinUserId {
+  width: 37.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.31rem;
+}
+.joinUserPasswordText {
+  position: relative;
+  font-size: 1rem;
+  font-family: "Wanted Sans Variable";
+  color: #2e3137;
+  text-align: left;
+}
+.joinUserPasswordInput,
+.joinUserPasswordBox {
+  display: flex;
+  align-items: center;
+}
+.joinUserPasswordInput {
+  width: 33.75rem;
+  border: 0;
+  outline: 0;
+  font-family: "Wanted Sans Variable";
+  font-size: 0.88rem;
+  background-color: transparent;
+  height: 1.06rem;
+  position: relative;
+  color: #000;
+  text-align: left;
+}
+.joinUserPasswordBox {
+  align-self: stretch;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.75rem 1.81rem;
+}
+.joinUserPassword {
+  width: 37.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.31rem;
+}
+.joinUserPasswordCheckText,
+.joinUserPasswordCheckInput {
+  position: relative;
+  font-size: 1rem;
+  font-family: "Wanted Sans Variable";
+  color: #2e3137;
+  text-align: left;
+}
+.joinUserPasswordCheckInput {
+  width: 33.75rem;
+  border: 0;
+  outline: 0;
+  font-size: 0.88rem;
+  background-color: transparent;
+  height: 1.06rem;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+.joinUserPasswordCheckBox {
+  align-self: stretch;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.81rem;
+}
+.joinUserPasswordCheck {
+  width: 37.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.31rem;
+}
+.joinUserStoreNumberText {
+  position: relative;
+  font-size: 1rem;
+  font-family: "Wanted Sans Variable";
+  color: #2e3137;
+  text-align: left;
+}
+.joinUserStoreNumberInput,
+.joinUserStoreNumberBox {
+  display: flex;
+  align-items: center;
+}
+.joinUserStoreNumberInput {
+  width: 33.75rem;
+  border: 0;
+  outline: 0;
+  font-family: "Wanted Sans Variable";
+  font-size: 0.88rem;
+  background-color: transparent;
+  height: 1.06rem;
+  position: relative;
+  color: #000;
+  text-align: left;
+}
+.joinUserStoreNumberBox {
+  align-self: stretch;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.75rem 1.81rem;
+}
+.joinUserStoreNumber {
+  width: 37.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.31rem;
+}
+.joinUserNameText {
+  position: relative;
+  font-size: 1rem;
+  font-family: "Wanted Sans Variable";
+  color: #2e3137;
+  text-align: left;
+}
+.joinUserNameInput,
+.joinUserNameBox {
+  display: flex;
+  align-items: center;
+}
+.joinUserNameInput {
+  width: 33.75rem;
+  border: 0;
+  outline: 0;
+  font-family: "Wanted Sans Variable";
+  font-size: 0.88rem;
+  background-color: transparent;
+  height: 1.06rem;
+  position: relative;
+  color: #000;
+  text-align: left;
+}
+.joinUserNameBox {
+  align-self: stretch;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.75rem 1.81rem;
+}
+.joinUserName {
+  width: 37.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.31rem;
+}
+.joinCompleteText {
+  position: relative;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  font-family: "Wanted Sans Variable";
+  color: #fff;
+  text-align: left;
+}
+.join,
+.joinButton,
+.joinFrame {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.joinButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0.94rem 1.25rem;
+  background-color: #b6c0cc;
+  width: 37.5rem;
+  border-radius: 10px;
+  flex-direction: row;
+  justify-content: center;
+}
+.join,
+.joinFrame {
+  flex-direction: column;
+}
+.joinFrame {
+  margin: 0;
+  width: 50rem;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+  justify-content: center;
+  padding: 5rem 1.25rem;
+  gap: 1.25rem;
+}
+.join {
+  width: 100%;
+  height: 67.5rem;
+  position: relative;
+  background-color: #f2f5f9;
+  overflow: hidden;
+  justify-content: space-between;
+  padding: 9.38rem 1.25rem;
+}
+
+.joinButton.active {
+  background-color:#FFA81E;
+}
