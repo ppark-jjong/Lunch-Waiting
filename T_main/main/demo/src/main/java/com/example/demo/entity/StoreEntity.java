@@ -4,6 +4,7 @@ import com.example.demo.entity.admin.LocalEntity;
 import com.example.demo.entity.owner.MenuEntity;
 import com.example.demo.entity.owner.OwnerUserEntity;
 import com.example.demo.entity.user.*;
+import com.example.demo.entity.user.ReviewReportEntity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -71,5 +72,7 @@ public class StoreEntity {
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "storeInReview")
     private List<ReviewEntity> reviewEntityList = new ArrayList<>();
-
+    
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "storeInReviewReport")
+    private List<ReviewReportEntity> reviewReportEntityList = new ArrayList<>();
 }

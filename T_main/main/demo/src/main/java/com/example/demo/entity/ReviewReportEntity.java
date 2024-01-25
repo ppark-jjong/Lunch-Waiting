@@ -24,6 +24,8 @@ public class ReviewReportEntity {
     @JoinColumn(name = "store_id", referencedColumnName = "store_id")
     private StoreEntity storeInReviewReport;
 
+    @Column
+    private String content;
 
 
 }
