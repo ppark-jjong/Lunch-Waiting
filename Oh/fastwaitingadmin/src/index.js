@@ -1,17 +1,27 @@
+import { createRoot } from 'react-dom/client';
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { Provider } from 'react-redux'; // react-redux에서 Provider를 불러옴
-import store from './redux/store'; // Redux 스토어를 불러옴
-import Login from './components/Login';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from './redux/store';
+
+import Login from './pages/Login/Login';
+import Join from './pages/Join/Join';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+const root = document.getElementById('root');
+
+createRoot(root).render(
   <React.StrictMode>
-    <Provider store={store}> {/* Provider로 애플리케이션을 감싸서 Redux 스토어를 제공 */}
-      <Login />
+    <Provider store={store}>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/join" element={<Join />} />
+          {/* Add more routes as needed */}
+        </Routes>
+      </Router>
     </Provider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
 
 reportWebVitals();

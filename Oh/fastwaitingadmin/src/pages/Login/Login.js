@@ -1,10 +1,9 @@
-// src/components/Login.js
-
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { loginUser } from '../redux/actions';
+import { loginUser } from '../../redux/actions';
 import axios from 'axios';
-import '../styles/Login.css';
+// import { Link } from 'react-router-dom';
+import './Login.css';
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -12,23 +11,17 @@ const Login = () => {
   const [inputFilled, setInputFilled] = useState(false);
   const dispatch = useDispatch();
 
-  const isUsernameValid = (username) => /^[a-z0-9]+$/.test(username);
-
-  const isPasswordValid = (password) => {
-    return /^(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[0-9])(?=.*[a-z]).{8,16}$/.test(password);
-  };
-
   const handleLogin = async () => {
     const trimmedUsername = username.trim();
     const trimmedPassword = password.trim();
 
-    if (!trimmedUsername) {
-      alert('아이디를 입력하세요.');
+    if (!trimmedUsername && !trimmedPassword) {
+      alert('아이디와 비밀번호를 입력하세요.');
       return;
     }
 
-    if (!isUsernameValid(trimmedUsername)) {
-      alert('아이디는 영문 소문자와 숫자로만 구성되어야 합니다.');
+    if (!trimmedUsername) {
+      alert('아이디를 입력하세요.');
       return;
     }
 
@@ -37,16 +30,12 @@ const Login = () => {
       return;
     }
 
-    if (!isPasswordValid(trimmedPassword)) {
-      alert('비밀번호는 최소 8자에서 최대 16자, 대문자, 특수문자, 숫자가 포함되어야 합니다.');
-      return;
-    }
-
     try {
       const response = await axios.post('/api/login', { username: trimmedUsername, password: trimmedPassword });
       dispatch(loginUser(response.data));
     } catch (error) {
       console.error('로그인에 실패했습니다.', error);
+      alert('로그인에 실패했습니다. 다시 시도해주세요.');
     }
   };
 
@@ -87,19 +76,19 @@ const Login = () => {
         </div>
         <button
           onClick={handleLogin}
-          className={`login1 ${inputFilled ? 'filled' : ''}`}
+          className={`loginButtonBox ${inputFilled ? 'filled' : ''}`}
         >
           <b className="loginButton">로그인</b>
         </button>
-        <div className="join">
-          <b className="joinText">회원가입</b>
+        <a href="/join" target="_blank" rel="noopener noreferrer" className="LoginJoin">
+          <span className="LoginJoinText">회원가입</span>
           <img
-            className="joinArrow "
+            className="LoginJoinArrow"
             loading="eager"
             alt=""
             src="/joinArrow.svg"
           />
-        </div>
+        </a>
       </form>
     </div>
   );
