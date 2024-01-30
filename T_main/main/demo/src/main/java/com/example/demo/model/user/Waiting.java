@@ -25,7 +25,7 @@ public class Waiting {
     private Store storeInWaiting;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "uuid", referencedColumnName = "uuid")
+    @JoinColumn(name = "user_id", referencedColumnName = "user_id")
     private User userInWaiting;
 
     @Column(name = "waiting_member")

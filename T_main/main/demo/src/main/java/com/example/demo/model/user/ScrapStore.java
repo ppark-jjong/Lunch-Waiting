@@ -24,7 +24,7 @@ public class ScrapStore {
 
     @Id
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "uuid", referencedColumnName = "uuid")
+    @JoinColumn(name = "user_id", referencedColumnName = "user_id")
     private User userInScrapStore;
 
 }

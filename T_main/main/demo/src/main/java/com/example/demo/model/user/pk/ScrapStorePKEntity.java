@@ -14,6 +14,6 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ScrapStorePKEntity implements Serializable {
-    private Store storeInRecentStore;
-    private User userInRecentStore;
+    private Store storeInScrapStore;
+    private User userInScrapStore;
 }

@@ -10,9 +10,9 @@ server:
 spring:
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://fast-waiting.cny42waeivln.us-east-1.rds.amazonaws.com/mydb
-    username: admin
-    password: 12345678
+    url: jdbc:mariadb://localhost:3306/mydb
+    username: root
+    password: 1234
   jwt:
     header: Authorization
     #HS512 알고리즘을 사용할 것이기 때문에 512bit, 즉 64byte 이상의 secret key를 사용해야 한다.
@@ -23,26 +23,10 @@ spring:
   logging:
     level:
       me.silvernine: DEBUG
-  #  security:
-  #    oauth2:
-  #      client:
-  #        registration:
-  #          google:
-  #            client-id: 289929730693-kl9cp9lv08ndkga288mtoqp28n19ash9.apps.googleusercontent.com
-  #            client-secret: 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
-  #            scope:
-  #              - email
-  #              - profile
-
-  ##확장자를 머스테치로 바로 인식 가능하게 함
-  #  mvc:
-  #    view:
-  #      prefix: /templates/
-  #      suffix: .mustache
 
 jpa:
   hibernate:
-    ddl-auto: create #create update none
+    ddl-auto: update #create update none
     naming:
       implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
       physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
