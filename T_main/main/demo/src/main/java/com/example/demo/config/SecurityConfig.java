@@ -63,18 +63,12 @@ public class SecurityConfig {
                 // 토큰이 없을 때도 허용가능한 페이지 (index, 토큰 생성 페이지, 회원가입 페이지)의 권한을 허용
                 .authorizeHttpRequests(authorizeHttpRequests -> authorizeHttpRequests
                         .requestMatchers("/api/hello", "/api/authenticate", "/api/signup").permitAll()
-                        .requestMatchers(PathRequest.toH2Console()).permitAll()
                         .anyRequest().authenticated()
                 )
 
                 // 세션을 사용하지 않기 때문에 STATELESS로 설정
                 .sessionManagement(sessionManagement ->
                         sessionManagement.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-                )
-
-                // enable h2-console
-                .headers(headers ->
-                        headers.frameOptions(HeadersConfigurer.FrameOptionsConfig::sameOrigin)
                 )
                 // JwtFilter 를 addFilterBefore로 등록했던 JwtSecurityConfig 클래스를 적용
                 .with(new JwtSecurityConfig(tokenProvider), customizer -> {
