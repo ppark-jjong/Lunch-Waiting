@@ -1,0 +1,27 @@
+server:
+  port: 8005
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/test_jwt
+    username: root
+    password: 1234
+
+  jpa:
+    hibernate:
+      ddl-auto: create #create update none
+      #      show-sql: true # DDL 출력
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
