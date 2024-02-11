@@ -19,6 +19,7 @@ public class LoginFilter extends UsernamePasswordAuthenticationFilter {
         this.authenticationManager = authenticationManager;
     }
 
+//    로그인 시도 시 접근 메서드
     @Override
     public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response)
             throws AuthenticationException {
@@ -32,7 +33,7 @@ public class LoginFilter extends UsernamePasswordAuthenticationFilter {
         UsernamePasswordAuthenticationToken authToken
                 = new UsernamePasswordAuthenticationToken(username, password, null);
 
-        //token에 담은 검증을 위한 AuthenticationManager로 전달
+        //token에 담은 검증을 위한 AuthenticationManager로 전달 (Security 내장 메서드)
         return authenticationManager.authenticate(authToken);
     }
 
@@ -41,12 +42,13 @@ public class LoginFilter extends UsernamePasswordAuthenticationFilter {
     protected void successfulAuthentication(HttpServletRequest request, HttpServletResponse response,
                                             FilterChain chain, Authentication authentication) {
 
+        System.out.println("success");
     }
 
     //로그인 실패시 실행하는 메소드
     @Override
     protected void unsuccessfulAuthentication(HttpServletRequest request, HttpServletResponse response,
                                               AuthenticationException failed) {
-
+        System.out.println("fail");
     }
 }
