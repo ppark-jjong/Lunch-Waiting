@@ -1,0 +1,556 @@
+.navReserveDecide,
+.navReserveMain,
+.navReserveApplication,
+.navReserveCancle,
+.navReserveComplete {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  align-self: stretch;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  font-family: "Wanted Sans Variable";
+  z-index: 1;
+}
+.navReserveMain {
+  background-color: #3790ff;
+  height: 2.5rem;
+  padding: 0.69rem 1.25rem 0.63rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  min-width: 7.88rem;
+  text-decoration: none;
+}
+.navReserveDecide,
+.navReserveApplication,
+.navReserveCancle,
+.navReserveComplete {
+  background-color: #f2f5f9;
+  height: 1.88rem;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.75rem;
+  color: #454a52;
+  min-width: 7.13rem;
+  text-decoration: none;
+}
+.navReserveMain:hover{
+  background-color: #2b75cf;
+  cursor: pointer;
+}
+.navReserveDecide:hover,
+.navReserveApplication:hover,
+.navReserveCancle:hover,
+.navReserveComplete:hover{
+  background-color: #C2CCD9;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navReserveMainGroup {
+  display: flex;
+  justify-content: flex-start;
+}
+.navReserveMainGroup {
+  width: 11.88rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.31rem;
+}
+.navWaiting {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: #f2f5f9;
+  align-self: stretch;
+  height: 2.5rem;
+  border-radius: 10px;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.69rem 1.25rem 0.63rem;
+  box-sizing: border-box;
+  font-family: "Wanted Sans Variable";
+  font-size: 1rem;
+  color: #454a52;
+  min-width: 7.88rem;
+  z-index: 1;
+  text-decoration: none;
+}
+.reserveMainNav,
+.reserveMainNavGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.reserveMainNavGroup {
+  align-self: stretch;
+  align-items: flex-end;
+  gap: 0.63rem;
+}
+.reserveMainNav {
+  width: 15.63rem;
+  background-color: #f2f5f9;
+  align-items: center;
+  padding: 1.88rem 1.25rem 10rem;
+  box-sizing: border-box;
+  gap: 1.88rem;
+  text-align: left;
+  font-size: 1rem;
+  color: #222;
+  font-family: "Wanted Sans Variable";
+}
+
+
+
+.reserveMainBgBlue {
+  height: 80.88rem;
+  width: 74.38rem;
+  position: relative;
+  background-color: #f7f7fa;
+  display: none;
+  max-width: 100%;
+}
+.reserveMainBgWhite,
+.reserveMainHeaderBox {
+  position: relative;
+  background-color: #fff;
+  display: none;
+}
+.reserveMainBgWhite {
+  align-self: stretch;
+  height: 77.13rem;
+}
+.reserveMainHeaderBox {
+  height: 4.06rem;
+  width: 70.63rem;
+  border-bottom: 3px solid #f3f5f7;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.reserveMainHeaderTitle {
+  width: 5rem;
+  border: 0;
+  outline: 0;
+  font-weight: 600;
+  font-family: "Wanted Sans Variable";
+  font-size: 1.25rem;
+  background-color: transparent;
+  height: 1.5rem;
+  position: relative;
+  letter-spacing: 0.02em;
+  color: #000;
+  text-align: left;
+  display: inline-block;
+  z-index: 1;
+}
+.reserveMainHeader {
+  align-self: stretch;
+  background-color: #fff;
+  border-top: 1px solid #f3f5f7;
+  border-right: 1px solid #f3f5f7;
+  border-bottom: 3px solid #f3f5f7;
+  border-left: 1px solid #f3f5f7;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.25rem 2.5rem 1.31rem;
+  max-width: 100%;
+  z-index: 2;
+}
+.calendarBgBlue,
+.calendarHeaderBox {
+  position: relative;
+  box-sizing: border-box;
+  display: none;
+}
+.calendarBgBlue {
+  align-self: stretch;
+  height: 66.44rem;
+  background-color: #e1e3ee;
+  border-bottom: 3px solid #a2a1a6;
+}
+.calendarHeaderBox {
+  height: 3.94rem;
+  width: 68.13rem;
+  background-color: #ebecf2;
+  border-top: 3px solid #a2a1a6;
+  max-width: 100%;
+  
+}
+.calendarMonthBeforeArrow,
+.calendarYearBeforeArrow {
+  height: 1.5rem;
+  width: 1.5rem;
+  position: relative;
+  min-height: 1.5rem;
+  z-index: 1;
+}
+.calendarBeforeGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.calendarYearMonth {
+  position: relative;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  z-index: 1;
+}
+.calendarMonthNextArrow,
+.calendarYearNextArrow {
+  height: 1.5rem;
+  width: 1.5rem;
+  position: relative;
+  min-height: 1.5rem;
+  z-index: 1;
+}
+.calendarHeader,
+.calendarNextGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.calendarHeader {
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+  padding-top: 1.06rem;
+  padding-bottom: 1.06rem;
+  gap: 1.38rem;
+  width: 68.25rem;
+  max-width: 100%;
+  z-index: 17;
+}
+.sunTitle,
+.sunBox {
+  position: relative;
+}
+.sunBox {
+  height: 2.19rem;
+  width: 9.69rem;
+  background-color: #fff;
+  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  display: none;
+}
+.sunTitle {
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  font-family: "Wanted Sans Variable";
+  color: #000;
+  text-align: left;
+  z-index: 1;
+}
+.sun {
+  border: 1px solid #d9d9d9;
+  width: 11.1rem;
+  height: 2.2rem;
+  /* padding: 0.5rem 4.35rem 0.5rem 4.35rem; */
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 16;
+}
+.monTitle,
+.monBox {
+  position: relative;
+}
+.monBox {
+  height: 2.19rem;
+  width: 9.69rem;
+  background-color: #fff;
+  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  display: none;
+}
+.monTitle {
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  font-family: "Wanted Sans Variable";
+  color: #000;
+  text-align: left;
+  z-index: 1;
+}
+.mon {
+  border: 1px solid #d9d9d9;
+  width: 11.1rem;
+  height: 2.2rem;
+  /* padding: 0.5rem 4.35rem 0.5rem 4.35rem; */
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 15;
+}
+.tueTitle,
+.tueBox {
+  position: relative;
+}
+.tueBox {
+  height: 2.19rem;
+  width: 9.69rem;
+  background-color: #fff;
+  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  display: none;
+}
+.tueTitle {
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  font-family: "Wanted Sans Variable";
+  color: #000;
+  text-align: left;
+  z-index: 1;
+}
+.tue {
+  border: 1px solid #d9d9d9;
+  width: 11.1rem;
+  height: 2.2rem;
+  /* padding: 0.5rem 4.35rem 0.5rem 4.35rem; */
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 14;
+}
+.wedTitle,
+.wedBox {
+  position: relative;
+}
+.wedBox {
+  height: 2.19rem;
+  width: 9.69rem;
+  background-color: #fff;
+  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  display: none;
+}
+.wedTitle {
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  font-family: "Wanted Sans Variable";
+  color: #000;
+  text-align: left;
+  z-index: 1;
+}
+.wed {
+  border: 1px solid #d9d9d9;
+  width: 11.1rem;
+  height: 2.2rem;
+  /* padding: 0.5rem 4.35rem 0.5rem 4.35rem; */
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 13;
+}
+.thuTitle,
+.thuBox {
+  position: relative;
+}
+.thuBox {
+  height: 2.19rem;
+  width: 9.69rem;
+  background-color: #fff;
+  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  display: none;
+}
+.thuTitle {
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  font-family: "Wanted Sans Variable";
+  color: #000;
+  text-align: left;
+  z-index: 1;
+}
+.thu {
+  border: 1px solid #d9d9d9;
+  width: 11.1rem;
+  height: 2.2rem;
+  /* padding: 0.5rem 4.35rem 0.5rem 4.35rem; */
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 12;
+}
+.friTitle,
+.friBox {
+  position: relative;
+}
+.friBox {
+  height: 2.19rem;
+  width: 9.69rem;
+  background-color: #fff;
+  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  display: none;
+}
+.friTitle {
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  font-family: "Wanted Sans Variable";
+  color: #000;
+  text-align: left;
+  z-index: 1;
+}
+.fri {
+  border: 1px solid #d9d9d9;
+  width: 11.1rem;
+  height: 2.2rem;
+  /* padding: 0.5rem 4.35rem 0.5rem 4.35rem; */
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 11;
+}
+.satTitle,
+.satBox {
+  position: relative;
+}
+.satBox {
+  height: 2.19rem;
+  width: 9.69rem;
+  background-color: #fff;
+  border-bottom: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  display: none;
+}
+.satTitle {
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  font-family: "Wanted Sans Variable";
+  color: #000;
+  text-align: left;
+  z-index: 1;
+}
+.sat,
+.calendarWeekendGroup {
+  display: flex;
+  flex-direction: row;
+}
+.sat {
+  border: 1px solid #d9d9d9;
+  width: 11.1rem;
+  height: 2.2rem;
+  /* padding: 0.5rem 4.35rem 0.5rem 4.35rem; */
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.calendarWeekendGroup {
+  max-width: 100%;
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* padding: 0 0.13rem 0 0.06rem; */
+  row-gap: 20px;
+}
+.calendarBlank{
+  display: flex;
+  flex: 0.6452 1;
+  position: relative;
+  background-color: #f1f1f1;
+  border : 1px solid #d9d9d9;
+  box-sizing: border-box;
+  height: 9.8rem;
+  z-index: 14;
+}
+.calenderdayGroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0.13rem 0 0.06rem;
+  row-gap: 20px;
+  width: 100%;
+}
+
+.calendar-column{
+  width: 100%;
+}
+.calendar,
+.reserveMainBody,
+.reserveMainBodyGroup {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.calendar {
+  width: 68.25rem;
+  background-color: #e1e3ee;
+  border-top: 3px solid #a2a1a6;
+  border-right: 1px solid #a2a1a6;
+  border-bottom: 3px solid #a2a1a6;
+  border-left: 1px solid #a2a1a6;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 0 2.19rem;
+  max-width: 100%;
+  z-index: 2;
+}
+.reserveMainBody,
+.reserveMainBodyGroup {
+  flex: 1;
+}
+.reserveMainBodyGroup {
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 0 5.38rem;
+  gap: 1.44rem;
+  max-width: 100%;
+  z-index: 1;
+}
+.reserveMainBody {
+  background-color: #f7f7fa;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1.88rem;
+  max-width: calc(100% - 250px);
+  text-align: left;
+  font-size: 1.38rem;
+  color: #000;
+  font-family: "Wanted Sans Variable";
+}
+
+.reserveMain {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.reserveMain {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  flex-direction: column;
+  letter-spacing: normal;
+}
+

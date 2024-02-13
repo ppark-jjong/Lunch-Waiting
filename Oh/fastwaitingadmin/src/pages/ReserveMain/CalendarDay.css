@@ -1,0 +1,99 @@
+.calendardayBox {
+  width: 9.69rem;
+  height: 9.69rem;
+  position: relative;
+  background-color: #fff;
+  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  display: none;
+}
+.calendardayWrap {
+  position: relative;
+  z-index: 1;
+}
+.calendardayWrap {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 0rem 1rem;
+  text-align: left;
+}
+.reserveDayAllCountTitle {
+  position: relative;
+  z-index: 1;
+}
+.reserveDayAllCount {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-bottom: 0.3rem;
+  color: #454a52;
+}
+.reserveDayAccTitle {
+  width: 3.19rem;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.reserveDayAccCount {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-bottom: 0.3rem;
+  color: #19b400;
+}
+.reserveDayDecTitle {
+  position: relative;
+  z-index: 1;
+}
+.reserveDayDecCount {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-bottom: 0.3rem;
+  color: #0053d8;
+}
+.reserveDayCanTitle {
+  width: 3rem;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.reserveDayCanCount {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-bottom: 0.3rem;
+  color: #ff002f;
+}
+.calendarday {
+  flex: 0.6452;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 0.63rem 2.75rem 1.5rem 0.56rem; */
+  gap: 0.44rem;
+  min-width: auto;
+  max-width: 9.73rem;
+  height: 9.8rem;
+  z-index: 9;
+  text-align: center;
+  font-size: 0.94rem;
+  color: #33363f;
+  font-family: "Wanted Sans Variable";
+}
+.calendarday:hover{
+  background-color: #e7e7e7;
+}

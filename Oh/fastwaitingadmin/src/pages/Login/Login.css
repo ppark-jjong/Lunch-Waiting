@@ -1,3 +1,6 @@
+*{
+ margin: 0; 
+}
 .logoIcon {
     width: 4rem;
     height: 4rem;

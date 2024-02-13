@@ -1,0 +1,554 @@
+.navTitle,
+.navBg {
+  position: relative;
+}
+.navBg {
+  width: 15.63rem;
+  background-color: #f2f5f9;
+  height: 123.75rem;
+  display: none;
+}
+.navTitle {
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  z-index: 1;
+}
+.navMainWaitingTitle {
+  position: relative;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  z-index: 1;
+}
+.navMainWaiting {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 1.25rem;
+  text-decoration: none;
+  color: #fff;
+}
+.navMainWaitingButton {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  background-color: #3790ff;
+}
+.navMainWaiting:hover{
+  cursor: pointer;
+}
+.navMainWaitingButton:hover{
+  background-color: #2b75cf;
+}
+.navWaitingGroup,
+.navWaitingSetTitle {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #454a52;
+}
+.navWaitingSetTitle {
+  width: 11.88rem;
+  border: 0;
+  outline: 0;
+  background-color: #f2f5f9;
+  height: 1.88rem;
+  border-radius: 10px;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.44rem 1.25rem;
+  font-family: "Wanted Sans Variable";
+  font-size: 0.81rem;
+  color: #454a52;
+}
+.navWaitingSetTitle:hover {
+  background-color: #C2CCD9;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navWaitingGroup {
+  align-self: stretch;
+  height: 2.5rem;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0.69rem 0 0;
+  position: relative;
+  gap: 1.25rem;
+  z-index: 1;
+  color: #fff;
+}
+.navTitleGroupSpace,
+.navReserve,
+.navReview,
+.navStore {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.navTitleGroupSpace {
+  flex-direction: column;
+  gap: 1.88rem;
+}
+.navReserve,
+.navReview,
+.navStore {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: #f2f5f9;
+  height: 2.5rem;
+  border-radius: 10px;
+  flex-direction: row;
+  padding: 0.69rem 1.25rem 0.63rem;
+  box-sizing: border-box;
+  font-family: "Wanted Sans Variable";
+  font-size: 1rem;
+  color: #454a52;
+  min-width: 7.88rem;
+  z-index: 1;
+  text-decoration: none;
+}
+.navReserve:hover,
+.navReview:hover,
+.navStore:hover,
+.navWaiting:hover{
+  background-color: #C2CCD9;
+  font-weight: 600;
+  cursor: pointer;
+}
+.mainNav,
+.navGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.navGroup {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: 0.63rem;
+}
+.mainNav {
+  width: 15.63rem;
+  background-color: #f2f5f9;
+  align-items: center;
+  padding: 1.88rem 1.25rem 45.55rem;
+  box-sizing: border-box;
+  gap: 3.13rem;
+}
+.sectionOutBg {
+  height: 123.75rem;
+  width: 74.38rem;
+  position: relative;
+  background-color: #f7f7fa;
+  display: none;
+  max-width: 100%;
+}
+.sectionBgWhite,
+.waitingListHeaderBg {
+  position: relative;
+  background-color: #fff;
+  display: none;
+}
+.sectionBgWhite {
+  align-self: stretch;
+  height: 120rem;
+}
+.waitingListHeaderBg {
+  height: 4.06rem;
+  width: 70.63rem;
+  border-bottom: 3px solid #f3f5f7;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.waitingListHeaderTitle {
+  width: 5.88rem;
+  border: 0;
+  outline: 0;
+  font-weight: 600;
+  font-family: "Wanted Sans Variable";
+  font-size: 1.25rem;
+  background-color: transparent;
+  height: 1.5rem;
+  position: relative;
+  letter-spacing: 0.02em;
+  color: #000;
+  text-align: left;
+  display: inline-block;
+  z-index: 1;
+}
+.waitingListHeader {
+  align-self: stretch;
+  background-color: #fff;
+  border-top: 1px solid #f3f5f7;
+  border-right: 1px solid #f3f5f7;
+  border-bottom: 3px solid #f3f5f7;
+  border-left: 1px solid #f3f5f7;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.25rem 2.5rem 1.31rem;
+  max-width: 100%;
+  z-index: 3;
+}
+.sectionBgBlue {
+  width: 70.63rem;
+  position: relative;
+  background-color: #e1e3ee;
+  height: 112.5rem;
+  display: none;
+  max-width: 100%;
+}
+.waitingListTopTeamInfo {
+  position: relative;
+  letter-spacing: 0.02em;
+  z-index: 3;
+}
+.waitingListTopMemberInfo,
+.waitingListTopInfoDot {
+  position: relative;
+  z-index: 3;
+}
+.waitingListTopInfoDot {
+  height: 0.31rem;
+  width: 0.31rem;
+  border-radius: 50%;
+  background-color: #33363f;
+}
+.waitingListTopMemberInfo {
+  letter-spacing: 0.02em;
+}
+.waitingListTopInfoGroup3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.63rem;
+}
+.waitingListTopTimeInfo {
+  position: relative;
+  letter-spacing: 0.02em;
+  text-align: right;
+  z-index: 3;
+}
+.waitingListTopInfoGroup1,
+.waitingListTopInfoGroup2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.waitingListTopInfoGroup2 {
+  flex: 1;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+.waitingListTopInfoGroup1 {
+  align-self: stretch;
+  justify-content: flex-start;
+  padding: 0 1.88rem 0 1.44rem;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 1rem;
+  color: #000;
+}
+.waitingListBox {
+  height: 9.38rem;
+  width: 68.13rem;
+  position: relative;
+  display: none;
+}
+.waitingNumber {
+  height: 2.38rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.waitingNumber,
+.waitingLocal {
+  position: relative;
+  z-index: 1;
+}
+.waitingListNumberLocalGroup,
+.waitingLocalGroup {
+  display: flex;
+  justify-content: flex-start;
+}
+.waitingLocalGroup {
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 0.5rem;
+  font-size: 1rem;
+  color: #000;
+}
+.waitingListNumberLocalGroup {
+  flex-direction: column;
+  align-items: center;
+  gap: 0.06rem;
+}
+.waitingTeamMember {
+  font-weight: 600;
+}
+.waitingTeamMember,
+.waitingPhone {
+  position: relative;
+  z-index: 1;
+}
+.waitingPhoneNameDotLeft {
+  height: 0.31rem;
+  width: 0.31rem;
+  position: relative;
+  border-radius: 50%;
+  background-color: #454a52;
+  z-index: 1;
+}
+.waitingName {
+  position: relative;
+  z-index: 1;
+}
+.waitingPhoneNameDotRight {
+  height: 0.31rem;
+  width: 0.31rem;
+  position: relative;
+  border-radius: 50%;
+  background-color: #454a52;
+  z-index: 1;
+}
+.waitingPhoneNameGroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 0.06rem 0 0;
+  gap: 1.06rem;
+}
+.waitingTime {
+  position: relative;
+  z-index: 1;
+}
+.waitingPhoneNameTimeGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.63rem;
+  min-width: 8.88rem;
+}
+.waitingVisit {
+  position: relative;
+  z-index: 1;
+}
+.waitingInfoUnderGroup {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  /* gap: 0.94rem; */
+  color: #33363f;
+}
+.waitingInfoGroup,
+.waitingInfoUnderGroup,
+.waitingListInfoLeftGroup {
+  display: flex;
+  justify-content: flex-start;
+}
+.waitingInfoGroup {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.63rem;
+  min-width: 11.88rem;
+  text-align: left;
+  font-size: 1rem;
+  color: #ffa81e;
+}
+.waitingListInfoLeftGroup {
+  width: 24.94rem;
+  flex-direction: row;
+  align-items: center;
+  gap: 3.38rem;
+  max-width: 100%;
+}
+.callBox {
+  height: 6.88rem;
+  width: 6.88rem;
+  position: relative;
+  border-radius: 10px;
+  background-color: #ffa81e;
+  display: none;
+}
+.callTitle {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Wanted Sans Variable";
+  color: #fff;
+  text-align: left;
+  z-index: 1;
+}
+.callButton {
+  cursor: pointer;
+  border: 0;
+  padding: 2.88rem 2.75rem 2.81rem 2.5rem;
+  background-color: #ffa81e;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.callButton:hover {
+  background-color: #cc7500;
+}
+.cancleBox {
+  height: 6.88rem;
+  width: 6.88rem;
+  position: relative;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 2px solid #ffa81e;
+  box-sizing: border-box;
+  display: none;
+}
+.cancleTitle {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Wanted Sans Variable";
+  color: #ffa81e;
+  text-align: left;
+  z-index: 1;
+}
+.cancleButton {
+  /* cursor: pointer;
+  border: 2px solid #ffa81e;
+  padding: 2.88rem 2.63rem 2.81rem 2.38rem;
+  background-color: #fff;
+  flex: 1;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; */
+  
+  cursor: pointer;
+  border: 2px solid #ffa81e;
+  padding: 2.88rem 2.75rem 2.81rem 2.5rem;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.cancleButton:hover {
+  background-color: #e6e6e6;
+  border: 2px solid #cc7500;
+  box-sizing: border-box;
+}
+.callAndCancelButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1.25rem;
+}
+.waitingListInfo {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.88rem 1.25rem 1.63rem;
+  box-sizing: border-box;
+  gap: 1.25rem;
+  z-index: 3;
+  border-radius: 20px;
+  background-color: #fff;
+  max-width: 100%;
+}
+.waitingListGroup,
+.waitingListBodyGroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.88rem;
+  max-width: 100%;
+}
+.waitingListBodyGroup {
+  background-color: #e1e3ee;
+  align-items: center;
+  padding: 1.25rem 1.25rem 5.5rem;
+  box-sizing: border-box;
+  gap: 1.31rem;
+  z-index: 2;
+}
+.sectionWaitingListGroup,
+.waitingList {
+  flex: 1;
+  display: flex;
+  box-sizing: border-box;
+}
+.sectionWaitingListGroup {
+  background-color: #fff;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 3.44rem;
+  max-width: 100%;
+  z-index: 1;
+}
+.waitingList {
+  background-color: #f7f7fa;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1.88rem;
+  max-width: calc(100% - 250px);
+  text-align: center;
+  font-size: 2rem;
+  color: #33363f;
+  font-family: "Wanted Sans Variable";
+}
+.main,
+.mainBody {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.mainBody {
+  align-self: stretch;
+  flex-direction: row;
+  max-width: 100%;
+  text-align: left;
+  font-size: 1rem;
+  color: #222;
+  font-family: "Wanted Sans Variable";
+  background-color: #f2f5f9;
+}
+.main {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  flex-direction: column;
+  letter-spacing: normal;
+}
