@@ -1,0 +1,275 @@
+.storeWaitingSetNavBg {
+  position: relative;
+}
+.storeWaitingSetNavBg {
+  width: 15.63rem;
+  background-color: #f2f5f9;
+  height: 32.19rem;
+  display: none;
+}
+.storeWaitingSetNavTitleGroupSpace {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.storeWaitingSetNavTitleGroupSpace {
+  flex-direction: column;
+  gap: 1.88rem;
+}
+
+.storeWaitingSetNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.storeWaitingSetNav {
+  width: 15.63rem;
+  background-color: #f2f5f9;
+  align-items: center;
+  padding: 1.88rem 1.25rem 34rem;
+  box-sizing: border-box;
+  gap: 3.13rem;
+  text-align: left;
+  font-size: 1rem;
+  color: #222;
+  font-family: "Wanted Sans Variable";
+}
+
+.storeWaitingSetBgBlue {
+  height: 32.19rem;
+  width: 74.38rem;
+  position: relative;
+  background-color: #f7f7fa;
+  display: none;
+  max-width: 100%;
+}
+.storeWaitingSetBgWhite,
+.storeWaitingSetHeaderBox {
+  position: relative;
+  background-color: #fff;
+  display: none;
+}
+.storeWaitingSetBgWhite {
+  align-self: stretch;
+  height: 28.44rem;
+}
+.storeWaitingSetHeaderBox {
+  height: 4.06rem;
+  width: 70.63rem;
+  border-bottom: 3px solid #f3f5f7;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.storeWaitingSetHeaderTitle {
+  width: 5.88rem;
+  border: 0;
+  outline: 0;
+  font-weight: 600;
+  font-family: "Wanted Sans Variable";
+  font-size: 1.25rem;
+  background-color: transparent;
+  height: 1.5rem;
+  position: relative;
+  letter-spacing: 0.02em;
+  color: #000;
+  text-align: left;
+  display: inline-block;
+  z-index: 1;
+}
+.storeWaitingSetHeader {
+  align-self: stretch;
+  background-color: #fff;
+  border-top: 1px solid #f3f5f7;
+  border-right: 1px solid #f3f5f7;
+  border-bottom: 3px solid #f3f5f7;
+  border-left: 1px solid #f3f5f7;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.25rem 2.5rem 1.31rem;
+  max-width: 100%;
+  z-index: 2;
+}
+.completeBox {
+  height: 2.5rem;
+  width: 5rem;
+  position: relative;
+  border-radius: 5px;
+  background-color: #ffa81e;
+  display: none;
+}
+.completeTitle {
+  position: relative;
+  font-size: 1.13rem;
+  letter-spacing: 0.02em;
+  line-height: 1rem;
+  font-weight: 600;
+  font-family: "Wanted Sans Variable";
+  color: #fff;
+  text-align: left;
+  z-index: 1;
+}
+.completeGroup {
+  cursor: pointer;
+  border: 0;
+  padding: 0.75rem 1.63rem 0.75rem 1.5rem;
+  background-color: #ffa81e;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.completeGroup:hover {
+  background-color: #cc7500;
+}
+.membersetUnder {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  max-width: 100%;
+}
+.storeWaitingSetBodyFrame,
+.storeWaitingSetBody {
+  flex: 1;
+  display: flex;
+  box-sizing: border-box;
+}
+.storeWaitingSetBodyFrame {
+  background-color: #fff;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 17rem;
+  max-width: 100%;
+  z-index: 1;
+}
+.storeWaitingSetBody {
+  background-color: #f7f7fa;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1.88rem;
+  max-width: calc(100% - 250px);
+}
+
+.memberTimeSetBox {
+  width: 70.63rem;
+  height: 8.44rem;
+  position: relative;
+  background-color: #fff;
+  border-bottom: 1px solid #f3f5f7;
+  box-sizing: border-box;
+  display: none;
+  max-width: 100%;
+}
+.memberTimeSetTitle {
+  position: relative;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  z-index: 1;
+}
+.memberinputbox {
+  height: 2.38rem;
+  width: 2.69rem;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  display: none;
+}
+.logo {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 1rem;
+  z-index: 1;
+}
+.memberInput {
+  flex: 1;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0.63rem 0.75rem 0.63rem 0.56rem;
+  z-index: 1;
+}
+.memberInputValue{
+  font-family: "Wanted Sans Variable";
+  border: 0;
+  width: 5rem;
+  font-size: 1rem;
+}
+.personTimeTitle {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 1rem;
+  font-weight: 500;
+  color: #000;
+  text-align: right;
+  z-index: 1;
+}
+.memberTimeSet,
+.memberInputGroup {
+  display: flex;
+  justify-content: flex-start;
+}
+.memberInputGroup {
+  width: 3.69rem;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.44rem;
+  color: #454a52;
+}
+.memberTimeSet {
+  align-self: stretch;
+  background-color: #fff;
+  border: 1.5px solid #f3f5f7;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.88rem 2.5rem;
+  gap: 1.25rem;
+  max-width: 100%;
+  z-index: 2;
+  text-align: left;
+  font-size: 1rem;
+  color: #000;
+  font-family: "Wanted Sans Variable";
+}
+.navWaitingGroup,
+.navWaitingSetTitle_storewaitingset {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #454a52;
+}
+.navWaitingSetTitle_storewaitingset {
+  width: 11.88rem;
+  border: 0;
+  outline: 0;
+  background-color: #3790ff;
+  height: 1.88rem;
+  border-radius: 10px;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.44rem 1.25rem;
+  font-family: "Wanted Sans Variable";
+  font-size: 0.81rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.navWaitingSetTitle_storewaitingset:hover {
+  background-color: #2b75cf;
+  cursor: pointer;
+}
