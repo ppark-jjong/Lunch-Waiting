@@ -1,0 +1,169 @@
+.main-logo-img {
+    height: 1.63rem;
+    width: 1.63rem;
+    position: relative;
+    object-fit: cover;
+  }
+  .main-logo-text {
+    position: relative;
+    letter-spacing: 0.4px;
+    line-height: 1rem;
+    font-weight: 900;
+    white-space: nowrap;
+  }
+  .main-logo-bar,
+  .vector-arrow {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .vector-arrow {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.63rem;
+  }
+  .main-logo-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 1.75rem 0.25rem 0;
+  }
+  .search-child {
+    height: 1.88rem;
+    width: 22.25rem;
+    position: relative;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+    display: none;
+    max-width: 100%;
+  }
+
+  .search-img {
+    height: 0.94rem;
+    width: 0.91rem;
+    position: relative;
+    z-index: 1;
+  }
+  .input-search {
+    width: 17rem;
+    border: 0;
+    outline: 0;
+    font-family: Inter;
+    font-size: 0.69rem;
+    background-color: transparent;
+    height: 1.8ream;
+    letter-spacing: 0.4px;
+    line-height: 1rem;
+    color: #a2a2a2;
+    text-align: left;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  /* .search-group,
+  .search-parent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    max-width: 100%;
+  } */
+  .search-parent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    max-width: 100%;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+    padding: 0.5rem 0.81rem 0.38rem;
+    gap: 0.88rem;
+  }
+  /* .search-group {
+    width: 22.25rem;
+    flex-direction: column;
+    padding: 0 0 0.25rem;
+  } */
+  .user-login-text {
+    position: relative;
+    letter-spacing: 0.1px;
+    white-space: nowrap;
+  }
+  .line-separator {
+    height: 1.31rem;
+    width: 0.06rem;
+    position: relative;
+    border-right: 1px solid #b6b6b6;
+    box-sizing: border-box;
+  }
+  .login-link,
+  .join-link {
+    color: gray; /* 로그인 텍스트의 색상을 회색으로 설정 */
+    text-decoration: none; /* 텍스트에 밑줄 제거 */
+  }
+  .user-login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .user-join-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .user-join-text {
+    position: relative;
+    letter-spacing: 0.1px;
+    white-space: nowrap;
+  }
+  .component-user-login,
+  .component-user-join {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.13rem;
+  }
+  .component-user-login{
+    flex-direction: row;
+    align-items: center;
+    gap: 0.63rem;
+    font-size: 0.69rem;
+    color: #878787;
+  }
+  .component-frame-rect,
+  .text-search-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .text-search-bar {
+    flex: 1;
+    align-items: center;
+    gap: 4rem;
+  }
+  .component-frame-rect {
+    align-self: stretch;
+    align-items: flex-start;
+    padding: 0 0.44rem;
+    box-sizing: border-box;
+  }
+  .container-frame {
+    align-self: stretch;
+    height: 0.13rem;
+    position: relative;
+    background-color: #efefef;
+  }
+  .group-nearby-fast {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.69rem;
+    max-width: 100%;
+    text-align: left;
+    font-size: 0.81rem;
+    color: #ffa81e;
+    font-family: Inter;
+  }

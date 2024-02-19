@@ -1,0 +1,78 @@
+/* ProductList.css */
+
+.product-list-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    /* min-height: 600px; */
+  }
+
+  .count-box {
+    display: flex;
+    align-items: center; /* 수직 가운데 정렬 */
+    justify-content: center; /* 수평 가운데 정렬 */
+  }
+  
+  .product-img {
+    /* max-width: 100%; */
+    width: 200px;
+    height: 150px;
+  }
+
+  
+  .product-img-box {
+    text-align: center;
+  }
+
+  .product-name {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .product-group{
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+  }
+
+
+  .km-group {
+    display: flex;
+    align-items: center;
+  }
+
+  .product-review {
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+  }
+  
+  #star-icon {
+    width: 6%;
+    height: 6%;
+  }
+
+  #product-number, #product-count {
+    font-size: 13px;
+    margin-left: 2%;
+  }
+
+  #product-sort, #product-area, #product-km {
+    font-size: 12px;
+    color: #8A8A8A;
+  }
+
+  #km-txt {
+    font-size: 10px;
+    color: #8A8A8A;
+  }
+
+  #dot-icon {
+    width: 1%;
+    color: #8A8A8A;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  /* 더 나은 디자인을 위해 필요한 스타일 추가 가능 */
+  
